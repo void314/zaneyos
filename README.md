@@ -2,7 +2,7 @@
 
 ## ZaneyOS 🟰 Best ❄️ NixOS Configs
 
-** Updated: June 3rd,2025
+\*\* Updated: June 3rd,2025
 
 ZaneyOS is a simple way of reproducing my configuration on any NixOS system.
 This includes the wallpaper, scripts, applications, config files, and more.
@@ -209,7 +209,7 @@ nix-shell -p git vim
 2. Clone this repo & enter it:
 
 ```
-cd && git clone https://gitlab.com/zaney/zaneyos.git -b stable-23 ~/zaneyos 
+cd && git clone https://github.com/void314/zaneyos.git -b stable-23 ~/zaneyos
 cd zaneyos
 
 You can still run the `install.sh` script if you want to.
@@ -234,10 +234,10 @@ nixos-generate-config --show-hardware-config > hosts/<your-desired-hostname>/har
 ```
 
 7. Run this to enable flakes and install the flake replacing hostname with
-  profile. I.e.  `intel`, `nvidia` `nvidia-laptop`, or `vm`
+   profile. I.e. `intel`, `nvidia` `nvidia-laptop`, or `vm`
 
 ```
-NIX_CONFIG="experimental-features = nix-command flakes" 
+NIX_CONFIG="experimental-features = nix-command flakes"
 sudo nixos-rebuild switch --flake .#profile
 ```
 

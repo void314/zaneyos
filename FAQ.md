@@ -1024,9 +1024,9 @@ The keymap is in the `~/zaneyos/modules/home/yazi/keymap.toml` file
       powerline-fonts
       roboto
       roboto-mono
-      symbola
       terminus_font
       # NERD fonts 
+      nerd-fonts.symbols-only
       nerd-fonts.0xproto
       nerd-fonts._3270
       nerd-fonts.agave
@@ -2206,7 +2206,7 @@ The keymap is in the `~/zaneyos/modules/home/yazi/keymap.toml` file
       powerline-fonts
       roboto
       roboto-mono
-      symbola
+      nerd-fonts.symbols-only
       terminus_font
       # NERD fonts 
       nerd-fonts.0xproto
