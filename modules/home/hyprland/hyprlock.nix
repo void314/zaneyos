@@ -1,5 +1,8 @@
-{username, ...}: let
-    inherit (import ../../../hosts/${host}/variables.nix) stylixImage;
+{
+  username, 
+  ...
+}: let
+    inherit (import ../../../hosts/${username}/variables.nix) stylixImage;
   in {
   programs.hyprlock = {
     enable = true;
