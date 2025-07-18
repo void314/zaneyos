@@ -13,7 +13,7 @@
       # Examples:
       packages = [
         "net.nokyan.Resources"              # Manage resources
-        "org.gnome.Showtime"                # Video player
+        # "org.gnome.Showtime"                # Video player
         "app.zen_browser.zen"               # Zen Browser
         
         # Add other Flatpak IDs here, e.g., "org.mozilla.firefox"
