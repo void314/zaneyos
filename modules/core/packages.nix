@@ -24,6 +24,10 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    automake # For Building From Source
+    libtool
+    intltool
+    gettext
     amfora # Fancy Terminal Browser For Gemini Protocol
     appimage-run # Needed For AppImage Support
     brightnessctl # For Screen Brightness Control
