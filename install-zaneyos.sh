@@ -186,9 +186,9 @@ sed -i "/^[[:space:]]*host[[:space:]]*=[[:space:]]*\"/s/\"\(.*\)\"/\"$hostName\"
 sed -i "/^[[:space:]]*profile[[:space:]]*=[[:space:]]*\"/s/\"\(.*\)\"/\"$profile\"/" ./flake.nix
 
 print_header "Timezone Configuration"
-read -rp "Enter your timezone (e.g., America/Chicago): [America/Chicago] " timeZone
+read -rp "Enter your timezone (e.g., Asia/Almaty): [Asia/Almaty] " timeZone
 if [ -z "$timeZone" ]; then
-  timeZone="America/Chicago"
+  timeZone="Asia/Almaty"
 fi
 sed -i "s|time.timeZone = \".*\";|time.timeZone = \"$timeZone\";|" ./modules/core/system.nix
 
