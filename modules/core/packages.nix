@@ -6,7 +6,7 @@
     };
     firefox.enable = false; # Firefox is not installed by default
     hyprland = {
-      enable = true; #someone forgot to set this so desktop file is created
+      enable = true; # someone forgot to set this so desktop file is created
       withUWSM = true;
     };
     dconf.enable = true;
@@ -26,7 +26,6 @@
   environment.systemPackages = with pkgs; [
     amfora # Fancy Terminal Browser For Gemini Protocol
     appimage-run # Needed For AppImage Support
-    brave # Brave Browser
     brightnessctl # For Screen Brightness Control
     cliphist # Clipboard manager using rofi menu
     cmatrix # Matrix Movie Effect In Terminal
@@ -54,7 +53,7 @@
     ncdu # Disk Usage Analyzer With Ncurses Interface
     nixfmt-rfc-style # Nix Formatter
     nwg-displays #configure monitor configs via GUI
-    onefetch #provides zsaneyos build info on current system
+    onefetch # provides zsaneyos build info on current system
     pavucontrol # For Editing Audio Levels & Devices
     pciutils # Collection Of Tools For Inspecting PCI Devices
     picard # For Changing Music Metadata & Getting Cover Art

@@ -2,11 +2,13 @@
   description = "ZaneyOS";
 
   inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nix-stable.url = "github:nixos/nixpkgs/nixos-25.05";
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.05";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    
     nvf.url = "github:notashelf/nvf";
     stylix.url = "github:danth/stylix/release-25.05";
     nix-flatpak.url = "github:gmodena/nix-flatpak?ref=latest";
@@ -19,8 +21,8 @@
     ...
   } @ inputs: let
     system = "x86_64-linux";
-  host = "void314";
-  profile = "nvidia";
+    host = "void314";
+    profile = "nvidia";
     username = "void314";
   in {
     nixosConfigurations = {
