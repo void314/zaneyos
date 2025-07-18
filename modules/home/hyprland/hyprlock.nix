@@ -1,6 +1,4 @@
-{username, ...}: let
-    inherit (import ../../../hosts/${host}/variables.nix) stylixImage;
-  in {
+{username, ...}: {
   programs.hyprlock = {
     enable = true;
     settings = {
@@ -12,7 +10,7 @@
       };
       background = [
         {
-          path = "/home/${username}/Pictures/Wallpapers/${stylixImage}";
+          path = "/home/${username}/Pictures/Wallpapers/beautifulmountainscape.jpg";
           blur_passes = 3;
           blur_size = 8;
         }

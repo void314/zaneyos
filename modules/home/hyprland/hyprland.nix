@@ -4,8 +4,13 @@
   pkgs,
   ...
 }: let
-    inherit (import ../../../hosts/${host}/variables.nix) extraMonitorSettings keyboardLayout stylixImage;
-  in {
+  inherit
+    (import ../../../hosts/${host}/variables.nix)
+    extraMonitorSettings
+    keyboardLayout
+    stylixImage
+    ;
+in {
   home.packages = with pkgs; [
     swww
     grim
