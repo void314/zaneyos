@@ -193,13 +193,13 @@ fi
 sed -i "s|time.timeZone = \".*\";|time.timeZone = \"$timeZone\";|" ./modules/core/system.nix
 
 print_header "Git Configuration"
-read -rp "Enter your Git username: [Tyler Kelley] " gitUsername
+read -rp "Enter your Git username: [void314] " gitUsername
 if [ -z "$gitUsername" ]; then
-  gitUsername="Tyler Kelley"
+  gitUsername="void314"
 fi
-read -rp "Enter your Git email: [tylerzanekelley@gmail.com] " gitEmail
+read -rp "Enter your Git email: [artiemdrozdov@yandex.kz] " gitEmail
 if [ -z "$gitEmail" ]; then
-  gitEmail="tylerzanekelley@gmail.com"
+  gitEmail="artiemdrozdov@yandex.kz"
 fi
 sed -i "s/gitUsername = \".*\";/gitUsername = \"$gitUsername\";/" ./hosts/$hostName/variables.nix
 sed -i "s/gitEmail = \".*\";/gitEmail = \"$gitEmail\";/" ./hosts/$hostName/variables.nix
